@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #1f2937 inset; /* matches bg-gray-800 */
+  -webkit-text-fill-color: white; /* text color */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white;
+}
