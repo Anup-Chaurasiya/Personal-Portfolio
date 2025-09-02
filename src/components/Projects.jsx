@@ -1,6 +1,6 @@
 import React from "react";
 import blog from "../assets/blog.avif"
-import jobImage from "../assets/job.jpg"
+import jobImage from "../assets/seeking.jpg"
 import image1 from "../assets/image1.jpg"
 import image2 from "../assets/image2.jpg"
 import tracking from "../assets/tracking.avif"
