@@ -1,5 +1,4 @@
 import React from "react";
-import { Code, Book, Users } from "lucide-react";
 import blog from "../assets/blog.avif"
 import job from "../assets/job.jpg"
 import image1 from "../assets/image1.jpg"
