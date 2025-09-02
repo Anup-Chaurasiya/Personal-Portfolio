@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Mail, FileText } from "lucide-react";
 import image4 from "../assets/image4.jpg";
 import { ReactTyped } from "react-typed";
+import { FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 
 const Hero = () => {
@@ -93,12 +95,21 @@ const Hero = () => {
 
         {/* LeetCode Button */}
         <a
+          href="https://github.com/Anup-Chaurasiya"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-gradient-to-r from-gray-800 to-black text-white px-5 py-3 rounded-full font-medium shadow-lg hover:scale-105 transform transition"
+        >
+          <FaGithub size={18} /> GitHub
+        </a>
+
+        <a
           href="https://leetcode.com/u/2021cs132/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-3 rounded-full font-medium shadow-lg hover:scale-105 transform transition"
         >
-          <FileText size={18} /> LeetCode
+          <SiLeetcode size={18} /> LeetCode
         </a>
       </motion.div>
 

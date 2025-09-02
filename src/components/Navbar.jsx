@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // hamburger & close icons
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,15 +7,17 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-md border-b border-gray-800 text-white">
       <div className="container mx-auto px-8 md:px-16 lg:px-24 py-4 flex justify-between items-center">
-        
-      <div className="text-2xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
-  Anup Chaurasiya
-</div>
+
+        <div className="text-xl sm:text-2xl font-extrabold bg-clip-text text-transparent 
+         bg-gradient-to-r from-green-400 via-blue-500 to-purple-500
+          drop-shadow-md animate-pulse">
+          Anup Chaurasiya
+        </div>
 
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 font-medium">
-          {["Home", "About Me", "Services", "Projects", "Contact"].map((item) => (
+          {["Home", "About Me", "Services", "Projects", "Contact", "Certificates"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(" ", "")}`}

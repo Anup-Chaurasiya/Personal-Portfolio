@@ -2,48 +2,64 @@ import React from "react";
 
 // Example certificates array
 const certificates = [
+
   {
     id: 1,
+    title: "MERN Internship",
+    issuer: "ABESIT",
+    date: "Aug 2024",
+    link: "https://drive.google.com/file/d/1i2IFx4QwvgZ8AktDYRn_aR74cmEI500e/view",
+  },
+  {
+    id: 2,
     title: "C++ Programming Language",
     issuer: "Udemy",
     date: "Dec 2022",
     link: "https://drive.google.com/file/d/13Lghr5kAzqU5aoLd7AKNz7_2TSK-YfAh/view",
   },
   {
-    id: 2,
+    id: 3,
     title: "JavaScript Algorithms & CSS",
     issuer: "Udemy",
     date: "Oct 2023",
     link: "https://drive.google.com/file/d/1AiOKc6IoxcgOuSl32m30-bnMrhGdnbPE/view",
   },
   {
-    id: 3,
+    id: 4,
     title: "Java & Oops Training Program",
     issuer: "ABESIT",
     date: "Feb 2024",
     link: "https://drive.google.com/file/d/1cS7vG9_nvsLcWN926p33sIG7VdST7l6v/view",
   },
   {
-    id: 4,
+    id: 5,
     title: "Backend Development",
     issuer: "Udemy",
     date: "Apr 2024",
     link: "https://drive.google.com/file/d/1NETVABmSyzGSRY5MNC_rXXAZiGyE3HGl/view",
   },
   {
-    id: 5,
+    id: 6,
     title: "JavaScript Algorithms & CSS",
     issuer: "Udemy",
     date: "Oct 2023",
     link: "https://drive.google.com/file/d/1AiOKc6IoxcgOuSl32m30-bnMrhGdnbPE/view",
   },
   {
-    id: 6,
+    id: 7,
     title: "Python Programming Language",
     issuer: "Udemy",
     date: "Dec 2022",
     link: "https://drive.google.com/file/d/1TBo_OXlOrkiejDWhpyD8RZvMKbF5CGqw/view",
+  },
+  {
+    id: 8,
+    title: "AI Beginner Course",
+    issuer: "Simplilearn",
+    date: "Feb 2025",
+    link: "https://drive.google.com/file/d/1Y3nomMw5H_qDmDgorLv-nNXfCh4BBIVl/view",
   }
+  
 ];
 
 const Certificates = () => {
