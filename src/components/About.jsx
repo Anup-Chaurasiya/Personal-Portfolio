@@ -3,22 +3,22 @@ import about from "../assets/about.jpg";
 import { Code, Database, Terminal, Layers } from "lucide-react"; // icons
 
 const skills = [
-  { name: "HTML & CSS", level: "w-[90%]" },
+  { name: "HTML & CSS", level: "w-[95%]" },
   { name: "React JS", level: "w-[90%]" },
   { name: "Node JS", level: "w-[90%]" },
   { name: "C++", level: "w-[96%]" },
   { name: "JavaScript", level: "w-[90%]" },
-  { name: "Python", level: "w-[75%]" },
-  { name: "OOPs", level: "w-[90%]" },
+  { name: "Python", level: "w-[80%]" },
+  { name: "OOPs", level: "w-[94%]" },
   { name: "SQL", level: "w-[95%]" },
   { name: "Express", level: "w-[80%]" },
   { name: "MongoDB", level: "w-[80%]" },
   { name: "Git & GitHub", level: "w-[80%]" },
-  { name: "Linux", level: "w-[70%]" },
+  { name: "Linux", level: "w-[82%]" },
   { name: "Data Structures & Algorithms", level: "w-[75%]" },
   { name: "Manual Testing", level: "w-[85%]" },
   { name: "Automation Testing", level: "w-[70%]" },
-  { name: "Cypress", level: "w-[60%]" },
+  { name: "Cypress", level: "w-[65%]" },
 ];
 
 const About = () => {
