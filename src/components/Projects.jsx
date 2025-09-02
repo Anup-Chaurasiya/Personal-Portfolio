@@ -1,6 +1,6 @@
 import React from "react";
 import blog from "../assets/blog.avif"
-import job from "../assets/job.jpg"
+import jobImage from "../assets/job.jpg"
 import image1 from "../assets/image1.jpg"
 import image2 from "../assets/image2.jpg"
 import tracking from "../assets/tracking.avif"
@@ -21,7 +21,7 @@ const projects = [
         id: 2,
         name: "Job Seeking Application",
         technologies: "MERN Stack",
-        image: job,
+        image: jobImage,
         github: "https://github.com/Anup-Chaurasiya/Job-Seeking-portal/tree/main",
         live: "https://job-seeking-portal-anup.vercel.app/",
     },
