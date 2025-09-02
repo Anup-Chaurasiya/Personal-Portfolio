@@ -39,7 +39,7 @@ const projects = [
         technologies: "React, Tailwind CSS",
         image: image2,
         github: "https://github.com/Anup-Chaurasiya/Personal-Portfolio/tree/main",
-        live: "https://personal-portfolio-anupchaura.vercel.app/",
+        live: "https://personal-portfolio-a-self.vercel.app/",
     },
     {
         id: 5,

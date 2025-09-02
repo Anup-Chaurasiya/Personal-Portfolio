@@ -46,7 +46,6 @@ const services = [
   },
 ];
 
-
 const Service = () => {
   const [expanded, setExpanded] = useState(null);
 
@@ -55,39 +54,41 @@ const Service = () => {
   };
 
   return (
-    <div className="bg-black text-white py-20" id="services">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Services</h2>
+    <div className="bg-black text-white py-16 sm:py-20" id="services">
+      <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-12">
+          My Services
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-gray-900 p-6 rounded-2xl shadow-lg border border-gray-700
+              className="bg-gray-900 p-4 sm:p-6 rounded-2xl shadow-lg border border-gray-700
               hover:border-green-400 hover:shadow-green-500/20 transition-all duration-300 group"
             >
               {/* Icon */}
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-800 mb-6 
+              <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gray-800 mb-4 sm:mb-6 
                 group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-blue-500 transition-all">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500 mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500 mb-2 sm:mb-3">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 mb-4 leading-relaxed">
+              <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base leading-relaxed">
                 {expanded === service.id ? service.full : service.short}
               </p>
 
               {/* Read More Button */}
               <button
                 onClick={() => toggleExpand(service.id)}
-                className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 
-                text-black font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="inline-block w-full sm:w-auto text-sm sm:text-base px-3 sm:px-4 py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 
+                text-black font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer text-center"
               >
                 {expanded === service.id ? "Read Less" : "Read More"}
               </button>
