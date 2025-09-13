@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="text-xl sm:text-2xl font-extrabold bg-clip-text text-transparent 
          bg-gradient-to-r from-green-400 via-blue-500 to-purple-500
           drop-shadow-md animate-pulse">
-          Anup Chaurasiya
+          Portfolio
         </div>
 
 
