@@ -31,8 +31,7 @@ const Hero = () => {
           <ReactTyped
             strings={[
               "Anup Chaurasiya 🚀",
-              "Software Developer 💻",
-              "Full Stack Developer 💻",
+              "Software Developer at Accountant AI💻",
             ]}
             typeSpeed={80}
             backSpeed={50}
@@ -51,7 +50,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
       >
-        Software Developer | Full-Stack Developer | Problem Solver
+        Software Developer | Problem Solver
       </motion.h2>
 
       {/* Description */}

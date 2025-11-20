@@ -4,21 +4,21 @@ import { Code, Database, Terminal, Layers } from "lucide-react"; // icons
 
 const skills = [
   { name: "HTML & CSS", level: "w-[95%]" },
-  { name: "React JS", level: "w-[90%]" },
-  { name: "Node JS", level: "w-[90%]" },
-  { name: "C++", level: "w-[96%]" },
-  { name: "JavaScript", level: "w-[90%]" },
-  { name: "Python", level: "w-[80%]" },
-  { name: "OOPs", level: "w-[94%]" },
+  { name: "React JS", level: "w-[95%]" },
+  { name: "Node JS", level: "w-[95%]" },
+  { name: "C++", level: "w-[95%]" },
+  { name: "JavaScript", level: "w-[95%]" },
+  { name: "Python", level: "w-[95%]" },
+  { name: "OOPs", level: "w-[95%]" },
   { name: "SQL", level: "w-[95%]" },
-  { name: "Express", level: "w-[80%]" },
-  { name: "MongoDB", level: "w-[80%]" },
-  { name: "Git & GitHub", level: "w-[85%]" },
-  { name: "Linux", level: "w-[82%]" },
-  { name: "Data Structures & Algorithms", level: "w-[85%]" },
-  { name: "Manual Testing", level: "w-[85%]" },
-  { name: "Automation Testing", level: "w-[70%]" },
-  { name: "Cypress", level: "w-[65%]" },
+  { name: "Express", level: "w-[95%]" },
+  { name: "MongoDB", level: "w-[95%]" },
+  { name: "Git & GitHub", level: "w-[95%]" },
+  { name: "Linux", level: "w-[95%]" },
+  { name: "Data Structures & Algorithms", level: "w-[95%]" },
+  { name: "Manual Testing", level: "w-[95%]" },
+  { name: "Automation Testing", level: "w-[80%]" },
+  { name: "Cypress", level: "w-[80%]" },
 ];
 
 const About = () => {
@@ -38,7 +38,7 @@ const About = () => {
           {/* Content */}
           <div className="flex-1">
             <p className="text-lg mb-10 leading-relaxed text-gray-300">
-             I am Anup Chaurasiya, a passionate <span className="text-green-400">Full-Stack Developer</span> with expertise in both frontend and backend technologies. 
+             I am Anup Chaurasiya, a passionate <span className="text-green-400">Software Developer at Accountant AI</span> with expertise in both frontend and backend technologies. 
              I thrive on solving complex problems and building modern, scalable web applications. With a focus on clean code, 
              optimal performance, and seamless user experiences, I continuously explore new tools and frameworks to stay ahead in the ever-evolving world of web development.
             </p>
