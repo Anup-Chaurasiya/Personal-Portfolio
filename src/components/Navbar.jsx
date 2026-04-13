@@ -30,8 +30,8 @@ const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <button className="hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-medium transform transition-transform duration-300 hover:scale-105 px-5 py-2 rounded-full shadow-lg">
-          Connect Me
+        <button className=" cursor-pointer hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-medium transform transition-transform duration-300 hover:scale-105 px-5 py-2 rounded-full shadow-lg">
+          <a href="#contact" rel="noopener noreferrer">Connect Me</a>
         </button>
 
         {/* Mobile Menu Button */}

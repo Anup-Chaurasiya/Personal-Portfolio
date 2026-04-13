@@ -6,11 +6,29 @@ import image2 from "../assets/image2.jpg"
 import tracking from "../assets/tracking.avif"
 import text from "../assets/text.jpg"
 import testing from "../assets/testing.webp"
-
+import shopify from "../assets/shopify.png"
+import skillmoksha from "../assets/skillmoksha.png"
 
 const projects = [
+
     {
         id: 1,
+        name: "SkillMoksha",
+        technologies: "Django, React, GraphQL",
+        image: skillmoksha,
+        github: "https://github.com/Anup-Chaurasiya/SkillMoksha",
+        live: "https://app.skillmoksha.ai",
+    },
+    {
+        id: 2,
+        name: "Upsellity",
+        technologies: "Shopify, React, Node.js",
+        image: shopify,
+        github: "https://github.com/Anup-Chaurasiya/Upsellity",
+        live: "https://upsellity.com/",
+    },
+    {
+        id: 3,
         name: "AI Blog Application",
         technologies: "MERN Stack, Gemini AI",
         image: blog,
@@ -18,7 +36,7 @@ const projects = [
         live: "https://ai-blog-application-anup.vercel.app/",
     },
     {
-        id: 2,
+        id: 4,
         name: "Job Seeking Application",
         technologies: "MERN Stack",
         image: jobImage,
@@ -26,7 +44,7 @@ const projects = [
         live: "https://job-seeking-portal-anup.vercel.app/",
     },
     {
-        id: 3,
+        id: 5,
         name: "AI Code Reviewer",
         technologies: "MERN Stack, Gemini AI",
         image: image1,
@@ -34,7 +52,7 @@ const projects = [
         live: "https://ai-powered-code-reviewer-anupchaura.vercel.app/",
     },
       {
-        id: 4,
+        id: 6,
         name: "Personal Portfolio",
         technologies: "React, Tailwind CSS",
         image: image2,
@@ -42,7 +60,7 @@ const projects = [
         live: "https://personal-portfolio-a-self.vercel.app/",
     },
     {
-        id: 5,
+        id: 7,
         name: "Real-Time Device Tracker",
         technologies: "Node.js, Socket.io",
         image: tracking,
@@ -50,22 +68,13 @@ const projects = [
         live: "https://real-time-device-tracker-hv9u.onrender.com/",
     },
     {
-        id: 6,
+        id: 8,
         name: "Hider Application",
         technologies: "React, Tailwind CSS",
         image: text,
         github: "https://github.com/Anup-Chaurasiya/Assignment-projects",
         live: "https://hider-projects.vercel.app/",
     },
-    {
-        id: 7,
-        name: "Enterprise-HRMS",
-        technologies: "Manual & Automation Testing",
-        image: testing,
-        github: "https://github.com/Anup-Chaurasiya/Enterprise-HRMS-Automation-Project-Manual-Testing",
-        live: "https://github.com/Anup-Chaurasiya/Enterprise-HRMS-Automation-Project-Manual-Testing",
-
-    }
 ];
 
 

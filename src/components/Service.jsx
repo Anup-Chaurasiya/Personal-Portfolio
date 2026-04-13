@@ -1,12 +1,19 @@
 import React, { useState } from "react";
-import { Code, Layers, Database, Monitor, CheckCircle, Bug } from "lucide-react"; 
+import {
+  Code,
+  Layers,
+  Database,
+  Monitor,
+  CheckCircle,
+  Store,
+} from "lucide-react"; 
 
 const services = [
   {
     id: 1,
-    title: "Software Developer",
+    title: "Software Engineer",
     short: "Designing and developing efficient, scalable, and reliable software solutions.",
-    full: "As a software developer, I build customized software applications tailored to client needs. From requirement gathering to deployment, I ensure high-quality code, strong architecture, and long-term maintainability.",
+    full: "As a software engineer, I build customized software applications tailored to client needs. From requirement gathering to deployment, I ensure high-quality code, strong architecture, and long-term maintainability.",
     icon: <Monitor size={36} className="text-green-400" />,
   },
   {
@@ -32,17 +39,10 @@ const services = [
   },
   {
     id: 5,
-    title: "Quality Assurance",
-    short: "Ensuring bug-free, secure, and reliable applications.",
-    full: "Through comprehensive manual and automated testing strategies, I identify issues early, improve performance, and maintain high software quality standards before release.",
-    icon: <CheckCircle size={36} className="text-pink-400" />,
-  },
-  {
-    id: 6,
-    title: "Manual & Automation Testing",
-    short: "Improving efficiency with Cypress and automation tools.",
-    full: "I implement test automation frameworks using Cypress and other tools, ensuring faster release cycles, reduced errors, and consistent product reliability alongside detailed manual testing.",
-    icon: <Bug size={36} className="text-red-400" />,
+    title: "Shopify App Development",
+    short: "Building and scaling Shopify apps to optimize revenue and customer engagement.",
+    full: "I specialize in developing Shopify apps that help businesses automate their workflows, improve customer experiences, and increase sales. From building custom integrations to optimizing store performance, I deliver scalable solutions that drive real business results.",
+    icon: <Store size={36} className="text-pink-400" />,
   },
 ];
 
