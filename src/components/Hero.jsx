@@ -8,11 +8,11 @@ import { SiLeetcode } from "react-icons/si";
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white text-center pt-24 sm:pt-32 md:pt-40 pb-16 sm:pb-20" id="home">
+    <div className="bg-black text-white text-center pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-10 lg:pb-12 min-h-screen flex flex-col justify-center" id="home">
       <motion.img
         src={Anup}
         alt="Anup Chaurasiya"
-        className="block mx-auto mb-6 sm:mb-8 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-green-400 shadow-lg"
+        className="block mx-auto mb-4 sm:mb-6 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-green-400 shadow-[0_0_30px_rgba(74,222,128,0.4)]"
         whileHover={{ scale: 1.05 }}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,17 +21,17 @@ const Hero = () => {
 
       {/* Title */}
       <motion.h1
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold px-2 sm:px-4"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold px-2 sm:px-4 mb-4"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         Hi, I'm{" "}
-        <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-purple-500">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500">
           <ReactTyped
             strings={[
-              "Anup Chaurasiya 🚀",
-              "Software Engineer at Accountant AI💻",
+              "Anup Chaurasiya",
+              "AI Full-Stack Engineer at Krut AI"
             ]}
             typeSpeed={80}
             backSpeed={50}
@@ -45,28 +45,44 @@ const Hero = () => {
 
       {/* Subtitle */}
       <motion.h2
-        className="text-sm sm:text-lg md:text-xl text-gray-400 mt-2 px-2 sm:px-4"
+        className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 px-2 sm:px-4 font-medium max-w-4xl mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
       >
-        Full-Stack Software Engineer building production-grade applications.
+        Building Production AI Products at <span className="text-white font-semibold">Twerz</span> & <span className="text-white font-semibold">SkillMoksha</span>
       </motion.h2>
 
       {/* Description */}
       <motion.p
-        className="mt-4 text-gray-300 max-w-xl sm:max-w-2xl mx-auto px-2 sm:px-4 text-sm sm:text-base"
+        className="mt-4 text-gray-400 max-w-3xl mx-auto px-4 sm:px-8 text-sm sm:text-base md:text-lg leading-relaxed"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 1 }}
       >
-        I design and develop modern, responsive, and high-performance web applications that combine clean,
-        efficient code with intuitive user experiences, ensuring scalable and reliable solutions for every project.
+        I specialize in engineering intelligent LLM pipelines, RAG systems, and robust full-stack applications. From concept to deployment, I build scalable AI solutions that solve real-world problems and drive measurable business impact.
       </motion.p>
+
+      {/* Highlight Chips */}
+      <motion.div
+        className="mt-5 flex flex-wrap justify-center gap-2 px-4 max-w-3xl mx-auto"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 1 }}
+      >
+        {["Python", "LangChain", "RAG", "FastAPI", "Django", "React", "Node.js", "GraphQL", "PostgreSQL", "Docker", "LLM Pipelines"].map((tag) => (
+          <span
+            key={tag}
+            className="text-xs sm:text-sm font-medium px-3 py-1 rounded-full bg-gray-900 border border-gray-700 text-gray-300 hover:border-green-400 hover:text-white transition-colors"
+          >
+            {tag}
+          </span>
+        ))}
+      </motion.div>
 
       {/* Buttons */}
       <motion.div
-        className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-3 sm:gap-4 px-2"
+        className="mt-5 sm:mt-6 flex flex-wrap justify-center gap-3 sm:gap-4 px-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
@@ -79,7 +95,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1GCkt6Gimc00VOjX07FDIJg4e3c1A-0xb/view?usp=sharing"
+          href="https://drive.google.com/file/d/1vIfawAvm5zscZtlSBGQuCaaPjxS7ePge/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 sm:px-5 py-2 sm:py-3 rounded-full font-medium shadow-lg hover:scale-105 transform transition text-sm sm:text-base"

@@ -11,9 +11,9 @@ import {
 const services = [
   {
     id: 1,
-    title: "Software Engineer",
-    short: "Designing and developing efficient, scalable, and reliable software solutions.",
-    full: "As a software engineer, I build customized software applications tailored to client needs. From requirement gathering to deployment, I ensure high-quality code, strong architecture, and long-term maintainability.",
+    title: "AI Products Development",
+    short: "Designing and developing efficient, scalable, and intelligent AI-powered software solutions.",
+    full: "I specialize in building production-ready AI products from the ground up. From requirement gathering to deploying robust LLM pipelines and APIs, I ensure high-quality code, strong architecture, and real business impact.",
     icon: <Monitor size={36} className="text-green-400" />,
   },
   {
@@ -43,6 +43,13 @@ const services = [
     short: "Building and scaling Shopify apps to optimize revenue and customer engagement.",
     full: "I specialize in developing Shopify apps that help businesses automate their workflows, improve customer experiences, and increase sales. From building custom integrations to optimizing store performance, I deliver scalable solutions that drive real business results.",
     icon: <Store size={36} className="text-pink-400" />,
+  },
+  {
+    id: 6,
+    title: "Software Testing & QA",
+    short: "Ensuring application reliability through comprehensive automated and manual testing.",
+    full: "I develop robust testing suites including unit, integration, and end-to-end tests to guarantee software quality. By writing automated tests for APIs, UI components, and complex AI workflows, I ensure edge cases are handled and production environments remain stable.",
+    icon: <CheckCircle size={36} className="text-red-400" />,
   },
 ];
 

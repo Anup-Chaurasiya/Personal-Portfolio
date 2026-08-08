@@ -8,8 +8,16 @@ import text from "../assets/text.jpg"
 import testing from "../assets/testing.webp"
 import shopify from "../assets/shopify.png"
 import skillmoksha from "../assets/skillmoksha.png"
+import resumeImage from "../assets/resume.jpeg"
 
 const projects = [
+    {
+        id: "twerz",
+        name: "Twerz",
+        technologies: "Next.js, FastAPI, PostgreSQL, LangChain",
+        image: resumeImage,
+        live: "https://twerz.com",
+    },
 
     {
         id: 1,
@@ -102,16 +110,17 @@ const Projects = () => {
                                     Live
                                 </a>
 
-                                <a
-                                    href={project.github}
-                                    className="inline-block bg-gradient-to-r 
-                                     from-gray-700 to-black text-white px-4 py-2 rounded-full shadow-md hover:opacity-90 transition ml-2"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    GitHub
-                                </a>
-
+                                {project.github && (
+                                  <a
+                                      href={project.github}
+                                      className="inline-block bg-gradient-to-r 
+                                       from-gray-700 to-black text-white px-4 py-2 rounded-full shadow-md hover:opacity-90 transition ml-2"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                  >
+                                      GitHub
+                                  </a>
+                                )}
                             </div>
                         </div>
                     ))}

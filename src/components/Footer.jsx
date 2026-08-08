@@ -13,8 +13,7 @@ const Footer = () => {
               Anup
             </h3>
             <p className="text-gray-400 max-w-md">
-              Full-Stack Developer passionate about building modern, scalable
-              and user-friendly web applications.
+              AI Full-Stack Engineer passionate about building intelligent, scalable, and production-ready AI products and web applications.
             </p>
           </div>
 
