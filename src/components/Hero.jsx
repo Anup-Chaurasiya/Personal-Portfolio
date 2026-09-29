@@ -31,7 +31,7 @@ const Hero = () => {
           <ReactTyped
             strings={[
               "Anup Chaurasiya",
-              "AI Full-Stack Engineer at Krut AI"
+              "Software Engineer at Krut AI"
             ]}
             typeSpeed={80}
             backSpeed={50}
@@ -50,7 +50,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
       >
-        Building Production AI Products at <span className="text-white font-semibold">Twerz</span> & <span className="text-white font-semibold">SkillMoksha</span>
+        Building Production Voice AI, RAG Platforms & SaaS at <span className="text-white font-semibold">Krut AI</span>, <span className="text-white font-semibold">Twerz</span>
       </motion.h2>
 
       {/* Description */}
@@ -60,7 +60,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 1 }}
       >
-        I specialize in engineering intelligent LLM pipelines, RAG systems, and robust full-stack applications. From concept to deployment, I build scalable AI solutions that solve real-world problems and drive measurable business impact.
+        I specialize in engineering real-time voice AI, stateful RAG systems, FastAPI microservices, and high-performance React/Next.js applications with 1.8+ years of production experience.
       </motion.p>
 
       {/* Highlight Chips */}
@@ -70,7 +70,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 1 }}
       >
-        {["Python", "LangChain", "RAG", "FastAPI", "Django", "React", "Node.js", "GraphQL", "PostgreSQL", "Docker", "LLM Pipelines"].map((tag) => (
+        {["Python", "FastAPI", "Django", "LiveKit", "LangGraph", "RAG", "React", "Next.js", "Node.js", "GraphQL", "PostgreSQL", "Qdrant", "Docker"].map((tag) => (
           <span
             key={tag}
             className="text-xs sm:text-sm font-medium px-3 py-1 rounded-full bg-gray-900 border border-gray-700 text-gray-300 hover:border-green-400 hover:text-white transition-colors"
@@ -95,7 +95,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1vIfawAvm5zscZtlSBGQuCaaPjxS7ePge/view?usp=sharing"
+          href="https://drive.google.com/file/d/1-qDolvR-HNqWttvugwZzg6D79nhzqJUx/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 sm:px-5 py-2 sm:py-3 rounded-full font-medium shadow-lg hover:scale-105 transform transition text-sm sm:text-base"

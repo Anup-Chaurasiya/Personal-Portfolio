@@ -61,7 +61,7 @@ const Contact = () => {
               <div className="flex items-center bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-green-500/20 transition">
                 <FaMapMarkedAlt className="text-green-400 text-xl mr-3" />
                 <span className="text-sm sm:text-base">
-                  Crossing Republic, Noida, UP, India
+                  Noida, India
                 </span>
               </div>
             </div>

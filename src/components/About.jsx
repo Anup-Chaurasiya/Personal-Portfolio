@@ -42,7 +42,7 @@ const About = () => {
           {/* Content */}
           <div className="flex-1">
             <p className="text-lg mb-10 leading-relaxed text-gray-300">
-            I am a <span className="text-green-400 font-semibold">Founding Engineer at Twerz</span> and an <span className="text-blue-400 font-semibold">AI Full-Stack Engineer</span>. I specialize in architecting intelligent, scalable systems from the ground up. At Twerz—a production AI career SaaS startup—I built the entire evidence-grounded LLM pipeline and backend architecture to serve real-world job seekers. Concurrently, at SkillMoksha, I develop AI-powered hiring platforms using cutting-edge technologies. My expertise spans advanced RAG architectures, robust FastAPI/Django backends, and high-performance Next.js/React frontends. I take complete ownership of the product lifecycle, shipping reliable AI products that drive measurable business impact.
+              I am a <span className="text-green-400 font-semibold">Software Engineer at Krut AI</span>, and former <span className="text-purple-400 font-semibold">Software Engineer Intern at Upsellity AI</span>. With 1.8+ years of production engineering experience, I specialize in architecting intelligent, scalable systems from the ground up. At <span className="text-blue-400 font-semibold">Twerz</span> — a production AI career SaaS — I built the entire evidence-grounded LLM pipeline, ATS scoring engine, and backend architecture serving 100+ real job seekers. I have also shipped real-time voice AI platforms using LiveKit and WebRTC, high-performance RAG operations platforms like <span className="text-green-400 font-semibold">ResolveAI</span> using FastAPI, LangGraph, and Qdrant, and e-commerce growth engines with GraphQL and Remix. My technical expertise spans advanced LLM orchestration, robust FastAPI/Django backends, and responsive React/Next.js frontends.
             </p>
 
             {/* Skills Section */}
@@ -66,18 +66,18 @@ const About = () => {
             <div className="mt-12 grid grid-cols-3 gap-6 text-center">
               <div>
                 <Code className="mx-auto mb-2 text-green-400" size={28} />
-                <h3 className="text-2xl font-bold text-green-400">1+</h3>
-                <p className="text-gray-400">Year Experience</p>
+                <h3 className="text-2xl font-bold text-green-400">1.8+</h3>
+                <p className="text-gray-400">Years Experience</p>
               </div>
               <div>
                 <Layers className="mx-auto mb-2 text-blue-400" size={28} />
-                <h3 className="text-2xl font-bold text-blue-400">9+</h3>
+                <h3 className="text-2xl font-bold text-blue-400">10+</h3>
                 <p className="text-gray-400">Projects Completed</p>
               </div>
               <div>
                 <Terminal className="mx-auto mb-2 text-purple-400" size={28} />
                 <h3 className="text-2xl font-bold text-purple-400">300+</h3>
-                <p className="text-gray-400">DSA Problems Solved</p>
+                <p className="text-gray-400">DSA Solved</p>
               </div>
             </div>
           </div>

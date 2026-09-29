@@ -5,32 +5,40 @@ import image1 from "../assets/image1.jpg"
 import image2 from "../assets/image2.jpg"
 import tracking from "../assets/tracking.avif"
 import text from "../assets/text.jpg"
-import testing from "../assets/testing.webp"
 import shopify from "../assets/shopify.png"
 import skillmoksha from "../assets/skillmoksha.png"
 import resumeImage from "../assets/resume.jpeg"
+import resolveai from "../assets/resolveai.jpg"
 
 const projects = [
     {
         id: "twerz",
-        name: "Twerz",
-        technologies: "Next.js, FastAPI, PostgreSQL, LangChain",
+        name: "Twerz — AI Career SaaS Platform",
+        technologies: "FastAPI, Next.js, PostgreSQL, LangChain, Docker, Razorpay",
         image: resumeImage,
         live: "https://twerz.com",
+        github: "https://github.com/Anup-Chaurasiya/Personal-Portfolio",
     },
-
     {
-        id: 1,
-        name: "SkillMoksha",
-        technologies: "Django, React, GraphQL",
+        id: "skillmoksha",
+        name: "SkillMoksha — AI Hiring Platform",
+        technologies: "Python, Django, LiveKit, WebRTC, OpenAI Realtime API, Redis",
         image: skillmoksha,
         github: "https://github.com/Anup-Chaurasiya/SkillMoksha",
         live: "https://app.skillmoksha.ai",
     },
     {
-        id: 2,
-        name: "Upsellity",
-        technologies: "Shopify, React, Node.js",
+        id: "resolveai",
+        name: "ResolveAI — AI Support Operations Platform",
+        technologies: "FastAPI, LangGraph, LangChain, Qdrant, React, TypeScript",
+        image: resolveai,
+        github: "https://github.com/Anup-Chaurasiya/Resolve-AI---AI-Support-Operations-Platform-",
+        live: "https://resolveai.twerz.com/",
+    },
+    {
+        id: "upsellity",
+        name: "Upsellity AI — E-Commerce Growth Engine",
+        technologies: "Node.js, GraphQL, React, TypeScript, Remix, LLM",
         image: shopify,
         github: "https://github.com/Anup-Chaurasiya/Upsellity",
         live: "https://upsellity.com/",
@@ -59,7 +67,7 @@ const projects = [
         github: "https://github.com/Anup-Chaurasiya/AI-Powered-Code-Reviewer/tree/main",
         live: "https://ai-powered-code-reviewer-anupchaura.vercel.app/",
     },
-      {
+    {
         id: 6,
         name: "Personal Portfolio",
         technologies: "React, Tailwind CSS",
