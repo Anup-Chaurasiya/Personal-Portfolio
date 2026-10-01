@@ -95,7 +95,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1-qDolvR-HNqWttvugwZzg6D79nhzqJUx/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Hkcd1f-0kTVvDbYWwoYMz0pykJXoCwHZ/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 sm:px-5 py-2 sm:py-3 rounded-full font-medium shadow-lg hover:scale-105 transform transition text-sm sm:text-base"
