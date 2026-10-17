@@ -104,16 +104,16 @@ const About = () => {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-2 font-mono text-xs text-cyan-400 tracking-widest uppercase mb-3 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/20">
             <Terminal size={12} />
-            <span>// 01. TECHNICAL PROFILE & PHILOSOPHY</span>
+            <span>// 01. TECHNICAL PROFILE & ENGINEERING VALUE</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Engineering High-Throughput &{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              Low-Latency Systems
+            Dual Superpower:{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
+              AI Engineering + Scalable Full-Stack Systems
             </span>
           </h2>
           <p className="mt-3 text-slate-400 max-w-2xl text-base sm:text-lg">
-            A look under the hood at my architectural approach, production experience, and core technical pillars.
+            Bridging cutting-edge Voice AI and Agentic LLMs with robust FastAPI microservices and responsive Next.js frontends.
           </p>
         </div>
 
@@ -155,7 +155,7 @@ const About = () => {
             {/* Quick Stat Highlights */}
             <div className="grid grid-cols-2 gap-3">
               <div className="p-4 rounded-xl bg-[#0a0e18]/80 border border-white/[0.06] hover:border-cyan-500/30 transition-all">
-                <div className="font-mono text-2xl font-bold text-cyan-400">1.8+ YOE</div>
+                <div className="font-mono text-2xl font-bold text-cyan-400">2+ YOE</div>
                 <div className="text-xs text-slate-400 mt-1">Enterprise & Venture Engineering</div>
               </div>
               <div className="p-4 rounded-xl bg-[#0a0e18]/80 border border-white/[0.06] hover:border-emerald-500/30 transition-all">
@@ -179,13 +179,13 @@ const About = () => {
             <div className="p-6 rounded-2xl bg-[#0a0e18]/80 border border-white/[0.08] shadow-lg space-y-4">
               <h3 className="text-xl font-bold text-white flex items-center gap-2">
                 <Zap size={20} className="text-cyan-400" />
-                <span>Production Background & Focus</span>
+                <span>AI Engineering Meets Production Full-Stack</span>
               </h3>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                I am a <strong className="text-white font-semibold">Software Engineer at Krut AI</strong>, former <strong className="text-white font-semibold">Founding Engineer at Twerz</strong>, and ex-<strong className="text-white font-semibold">Software Engineer Intern at Upsellity AI</strong>. Over 1.8+ years in production, I have designed and deployed real-time conversational voice architectures, fault-tolerant FastAPI microservices, and stateful RAG platforms.
+                I am an <strong className="text-white font-semibold">AI Engineer and Full-Stack Software Engineer</strong> with <strong className="text-cyan-300">2+ years of production experience</strong>. What sets me apart is the rare ability to bridge deep generative AI architectures with battle-tested distributed engineering.
               </p>
               <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-                At Krut AI, I built the end-to-end real-time AI interviewer (<strong className="text-slate-200">SkillMoksha</strong>) using LiveKit, WebRTC, and the OpenAI Realtime API, achieving natural voice turn-taking and reducing recruiter screening time by 75%. At Twerz, I architected an evidence-grounded ATS pipeline and billing backend powering 100+ active job seekers.
+                At <strong className="text-white">Krut AI</strong>, I built an end-to-end real-time AI interviewer (<strong className="text-slate-200">SkillMoksha</strong>) using LiveKit WebRTC, VAD, and OpenAI Realtime API. At <strong className="text-white">Twerz</strong>, I founded a production AI career SaaS serving 100+ active job seekers with evidence-grounded ATS scoring pipelines, FastAPI microservices, and automated Razorpay billing.
               </p>
             </div>
 

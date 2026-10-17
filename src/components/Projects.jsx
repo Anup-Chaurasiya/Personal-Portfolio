@@ -24,9 +24,9 @@ import resolveai from "../assets/resolveai.jpg";
 
 const CATEGORIES = [
   { id: "all", label: "All Systems (10)" },
-  { id: "production", label: "Flagship Production (4)" },
-  { id: "ai", label: "Voice & AI Agents (3)" },
-  { id: "fullstack", label: "Full-Stack & Tools (3)" },
+  { id: "production", label: "Production Platforms (4)" },
+  { id: "ai", label: "Voice AI & Agentic LLMs (3)" },
+  { id: "fullstack", label: "Full-Stack SaaS & APIs (4)" },
 ];
 
 const PROJECTS = [

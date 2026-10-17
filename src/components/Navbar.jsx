@@ -60,12 +60,12 @@ const Navbar = () => {
                 <span className="font-mono text-sm sm:text-base font-bold tracking-tight text-white group-hover:text-cyan-300 transition-colors">
                   anup<span className="text-cyan-400">.dev</span>
                 </span>
-                <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-medium">
-                  LIVE
+                <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold">
+                  AVAILABLE // &lt;30 DAYS
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-slate-400 tracking-wider">
-                SWE // AI SYSTEMS
+              <span className="font-mono text-[10px] text-cyan-300 font-medium tracking-wider">
+                AI & FULL-STACK ENGINEER
               </span>
             </div>
           </a>

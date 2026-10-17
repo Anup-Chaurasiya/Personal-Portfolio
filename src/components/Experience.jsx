@@ -17,7 +17,7 @@ const EXPERIENCES = [
   {
     id: "krut-ai",
     company: "Krut AI",
-    role: "Software Engineer",
+    role: "Software Engineer — AI & Voice Systems",
     product: "SkillMoksha — Real-time AI Voice Interviewer & Hiring Engine",
     duration: "May 2024 – Present",
     statusBadge: "PRODUCTION ACTIVE",
@@ -70,7 +70,7 @@ const EXPERIENCES = [
   {
     id: "twerz",
     company: "Twerz",
-    role: "Founding Engineer",
+    role: "Founding Engineer — Full-Stack AI Platform",
     product: "AI Career SaaS Platform (Serving 100+ Active Job Seekers)",
     duration: "Jun 2024 – Present",
     statusBadge: "PRODUCTION SAAS",
@@ -118,7 +118,7 @@ const EXPERIENCES = [
   {
     id: "upsellity",
     company: "Upsellity AI",
-    role: "Software Engineer Intern",
+    role: "Software Engineer Intern — Full-Stack & E-Commerce APIs",
     product: "E-Commerce Growth & Automated Discount Engine",
     duration: "Jan 2024 – May 2024",
     statusBadge: "COMPLETED",

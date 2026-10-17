@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import RecruiterFastTrack from "./components/RecruiterFastTrack";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -36,6 +37,7 @@ const App = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <RecruiterFastTrack />
         <About />
         <Experience />
         <Projects />

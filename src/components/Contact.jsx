@@ -84,13 +84,13 @@ const Contact = () => {
             <span>// 06. DIRECT COMMUNICATIONS CHANNEL</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Initiate Conversation &{" "}
+            Hire Anup Chaurasiya —{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
-              System Inquiries
+              AI & Full-Stack Engineer
             </span>
           </h2>
           <p className="mt-3 text-slate-400 max-w-2xl text-base sm:text-lg">
-            Available for high-impact software engineering roles, Voice AI architecture engagements, and production backend challenges.
+            Actively interviewing for AI Engineer & Full-Stack SDE-II roles (12+ LPA alignment). Notice period: &lt; 30 days. Let's discuss immediate team contribution.
           </p>
         </div>
 
