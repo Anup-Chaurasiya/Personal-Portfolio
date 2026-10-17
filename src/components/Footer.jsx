@@ -1,76 +1,119 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Terminal, ArrowUp, Activity, ShieldCheck, Heart } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="bg-black text-white py-12 relative">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-10">
-          {/* Left: About */}
-          <div className="flex-1 mb-6 md:mb-0 text-center md:text-left">
-            <h3 className="text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-              Anup
-            </h3>
-            <p className="text-gray-400 max-w-md">
-              AI Full-Stack Engineer passionate about building intelligent, scalable, and production-ready AI products and web applications.
-            </p>
+    <footer className="relative bg-[#05070c] border-t border-white/[0.08] text-slate-400 py-12 overflow-hidden">
+      {/* Background Accent Grid */}
+      <div className="absolute inset-0 cyber-grid opacity-30 pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        {/* Top Tier */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/[0.06]">
+          {/* Logo & Operational Status */}
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+              <Terminal size={16} />
+            </div>
+            <div>
+              <div className="font-mono text-sm font-bold text-white tracking-tight">
+                anup<span className="text-cyan-400">.dev</span>
+              </div>
+              <div className="flex items-center gap-1.5 font-mono text-[10px] text-emerald-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>SYS_STATUS: OPERATIONAL</span>
+              </div>
+            </div>
           </div>
 
-          {/* Right: Newsletter */}
-          <div className="flex-1 w-full">
-            <form className="flex items-center justify-center md:justify-end">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full md:w-2/3 lg:w-1/2 p-3 rounded-l-full bg-gray-800 border border-gray-600 
-                focus:outline-none focus:border-green-400 transition"
-              />
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-black font-semibold px-6 
-                py-3 rounded-r-full hover:opacity-90 transition cursor-pointer"
-              >
-                Subscribe
-              </button>
-            </form>
+          {/* Nav Quicklinks */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-mono">
+            <a href="#home" className="hover:text-cyan-300 transition-colors">Home</a>
+            <span className="text-slate-600">•</span>
+            <a href="#aboutme" className="hover:text-cyan-300 transition-colors">About</a>
+            <span className="text-slate-600">•</span>
+            <a href="#experience" className="hover:text-cyan-300 transition-colors">Experience</a>
+            <span className="text-slate-600">•</span>
+            <a href="#projects" className="hover:text-cyan-300 transition-colors">Projects</a>
+            <span className="text-slate-600">•</span>
+            <a href="#services" className="hover:text-cyan-300 transition-colors">Capabilities</a>
+            <span className="text-slate-600">•</span>
+            <a href="#certificates" className="hover:text-cyan-300 transition-colors">Credentials</a>
+            <span className="text-slate-600">•</span>
+            <a href="#contact" className="hover:text-cyan-300 transition-colors">Contact</a>
           </div>
+
+          {/* Scroll to Top Trigger */}
+          <button
+            onClick={scrollToTop}
+            className="p-2.5 rounded-xl bg-white/[0.03] hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/40 text-slate-300 hover:text-cyan-300 transition-all cursor-pointer flex items-center gap-2 font-mono text-xs"
+            aria-label="Scroll to top"
+          >
+            <span>Top</span>
+            <ArrowUp size={14} />
+          </button>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-700 my-6"></div>
-
-        {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          {/* Copyright */}
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Anup Chaurasiya. All rights reserved.
+        {/* Middle Tier: Summary & Verified Links */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-xs sm:text-sm text-slate-400 text-center md:text-left max-w-lg leading-relaxed">
+            Software Engineer specializing in Production Voice AI, Distributed RAG Systems & Scalable Microservices. Architected with high fidelity and performance in mind.
           </p>
 
           {/* Social Icons */}
-          <div className="flex space-x-6 mb-4 md:mb-0">
-            <a href="https://www.facebook.com/" className="text-gray-400 hover:text-green-400 transition text-xl">
-              <FaFacebook />
+          <div className="flex items-center gap-2.5">
+            <a
+              href="https://github.com/Anup-Chaurasiya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-cyan-500/40 text-slate-400 hover:text-white transition-all"
+              aria-label="GitHub"
+            >
+              <FaGithub size={16} />
             </a>
-            <a href="https://x.com/anupchaurasia73" className="text-gray-400 hover:text-blue-400 transition text-xl">
-              <FaTwitter />
+            <a
+              href="https://www.linkedin.com/in/anupchaurasiya/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-sky-500/40 text-slate-400 hover:text-sky-400 transition-all"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={16} />
             </a>
-            <a href="https://www.linkedin.com/in/anupchaurasiya/" className="text-gray-400 hover:text-blue-500 transition text-xl">
-              <FaLinkedin />
+            <a
+              href="https://leetcode.com/u/2021cs132/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-amber-500/40 text-slate-400 hover:text-amber-400 transition-all"
+              aria-label="LeetCode"
+            >
+              <SiLeetcode size={16} />
             </a>
-            <a href="https://github.com/Anup-Chaurasiya" className="text-gray-400 hover:text-white transition text-xl">
-              <FaGithub />
+            <a
+              href="https://x.com/anupchaurasia73"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-cyan-500/40 text-slate-400 hover:text-cyan-400 transition-all"
+              aria-label="Twitter"
+            >
+              <FaTwitter size={16} />
             </a>
           </div>
+        </div>
 
-          {/* Links */}
-          <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white text-sm">
-              Privacy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm">
-              Terms of Service
-            </a>
+        {/* Bottom Tier: Copyright & Meta */}
+        <div className="pt-6 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-[11px] text-slate-500">
+          <div>
+            &copy; {new Date().getFullYear()} Anup Chaurasiya. All rights reserved.
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span>Built with React 19 • TailwindCSS v4 • Framer Motion</span>
           </div>
         </div>
       </div>

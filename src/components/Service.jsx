@@ -1,109 +1,159 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  Code,
-  Layers,
-  Database,
-  Monitor,
-  CheckCircle,
+  Mic,
+  Cpu,
+  Server,
+  Layout,
   Store,
-} from "lucide-react"; 
+  CheckCircle2,
+  Terminal,
+  ArrowUpRight,
+  ShieldCheck,
+  Zap,
+} from "lucide-react";
 
-const services = [
+const CAPABILITIES = [
   {
-    id: 1,
-    title: "AI Products Development",
-    short: "Designing and developing efficient, scalable, and intelligent AI-powered software solutions.",
-    full: "I specialize in building production-ready AI products from the ground up. From requirement gathering to deploying robust LLM pipelines and APIs, I ensure high-quality code, strong architecture, and real business impact.",
-    icon: <Monitor size={36} className="text-green-400" />,
+    num: "01",
+    title: "Real-Time Voice AI & WebRTC Systems",
+    tag: "VOICE_AGENT_ENGINEERING",
+    icon: <Mic className="text-cyan-400" size={24} />,
+    description:
+      "Engineering low-latency, bidirectional audio streaming pipelines using LiveKit and WebRTC. Implementing voice activity detection (VAD), silence buffer flushing, dynamic interruption handling, and natural turn-taking with the OpenAI Realtime API.",
+    technologies: ["LiveKit", "WebRTC", "OpenAI Realtime", "VAD", "WebSockets", "Plivo"],
+    metrics: "Sub-second speech turnaround & zero AI overlap",
   },
   {
-    id: 2,
-    title: "Full-Stack Development",
-    short: "Building end-to-end web applications with modern technologies.",
-    full: "I specialize in creating seamless full-stack solutions by combining frontend and backend expertise. From UI/UX design to database management and API integrations, I deliver complete, production-ready applications.",
-    icon: <Layers size={36} className="text-yellow-400" />,
+    num: "02",
+    title: "Stateful RAG & Multi-Agent Orchestration",
+    tag: "AGENTIC_KNOWLEDGE_OPS",
+    icon: <Cpu className="text-emerald-400" size={24} />,
+    description:
+      "Architecting stateful LLM workflows using LangGraph and LangChain with high-dimensional vector search on Qdrant and pgvector. Implementing strict structured output validation to prevent hallucinations and enforce ground-truth compliance.",
+    technologies: ["LangGraph", "Qdrant", "LangChain", "pgvector", "LiteLLM", "Prompt Ops"],
+    metrics: "100% structured schema compliance & hallucination defense",
   },
   {
-    id: 3,
-    title: "Backend Development",
-    short: "Developing secure, scalable, and high-performance server-side applications.",
-    full: "I focus on Node.js, Express, and databases (SQL & MongoDB) to build APIs, authentication systems, and business logic that power robust backend infrastructures.",
-    icon: <Database size={36} className="text-purple-400" />,
+    num: "03",
+    title: "High-Concurrency Distributed Backends",
+    tag: "MICROSERVICES_CONCURRENCY",
+    icon: <Server className="text-indigo-400" size={24} />,
+    description:
+      "Developing resilient backend infrastructures with FastAPI, Django, and Node.js. Designing asynchronous worker queues with Celery and Redis to handle 100+ concurrent background jobs for heavy document processing and automated AI evaluation.",
+    technologies: ["FastAPI", "Django", "Celery", "Redis", "PostgreSQL", "Docker"],
+    metrics: "70% pipeline latency cut & 99.9% worker reliability",
   },
   {
-    id: 4,
-    title: "Frontend Development",
-    short: "Creating interactive, user-friendly, and responsive interfaces.",
-    full: "With React.js and modern frameworks, I design pixel-perfect, dynamic, and engaging frontends that provide users with smooth and responsive experiences across devices.",
-    icon: <Code size={36} className="text-blue-400" />,
+    num: "04",
+    title: "Full-Stack SaaS Platforms & Applications",
+    tag: "PRODUCTION_SAAS",
+    icon: <Layout className="text-sky-400" size={24} />,
+    description:
+      "Building complete end-to-end production web applications with Next.js, React 19, TypeScript, and TailwindCSS. Implementing secure OAuth/JWT authentication, recurring billing with Razorpay, and Chrome extension companion tooling.",
+    technologies: ["Next.js", "React 19", "TypeScript", "TailwindCSS v4", "Razorpay", "Chrome APIs"],
+    metrics: "Serving 100+ live paying/active job seekers on Twerz",
   },
   {
-    id: 5,
-    title: "Shopify App Development",
-    short: "Building and scaling Shopify apps to optimize revenue and customer engagement.",
-    full: "I specialize in developing Shopify apps that help businesses automate their workflows, improve customer experiences, and increase sales. From building custom integrations to optimizing store performance, I deliver scalable solutions that drive real business results.",
-    icon: <Store size={36} className="text-pink-400" />,
+    num: "05",
+    title: "E-Commerce Growth & Discount Engines",
+    tag: "SHOPIFY_ECOSYSTEM",
+    icon: <Store className="text-purple-400" size={24} />,
+    description:
+      "Building high-speed GraphQL synchronization layers between merchant storefronts and backend discount engines. Developing embedded UI applications with Shopify Polaris and automated LLM-driven personalized bundle recommendation engines.",
+    technologies: ["GraphQL", "Node.js", "Remix", "Shopify Polaris", "TypeScript", "REST"],
+    metrics: "Sub-100ms promotion calculation & checkout sync",
   },
   {
-    id: 6,
-    title: "Software Testing & QA",
-    short: "Ensuring application reliability through comprehensive automated and manual testing.",
-    full: "I develop robust testing suites including unit, integration, and end-to-end tests to guarantee software quality. By writing automated tests for APIs, UI components, and complex AI workflows, I ensure edge cases are handled and production environments remain stable.",
-    icon: <CheckCircle size={36} className="text-red-400" />,
+    num: "06",
+    title: "Software Reliability & Automated QA",
+    tag: "RELIABILITY_TESTING",
+    icon: <CheckCircle2 className="text-rose-400" size={24} />,
+    description:
+      "Authoring comprehensive automated unit and integration test suites covering complex LLM chains, WebRTC connections, and billing flows. Ensuring continuous deployment confidence across 64+ merged pull requests.",
+    technologies: ["PyTest", "Jest", "GitHub Actions", "Docker", "CI/CD", "Linux"],
+    metrics: "150+ automated test cases & 0 breaking deployments",
   },
 ];
 
 const Service = () => {
-  const [expanded, setExpanded] = useState(null);
-
-  const toggleExpand = (id) => {
-    setExpanded(expanded === id ? null : id);
-  };
-
   return (
-    <div className="bg-black text-white py-16 sm:py-20" id="services">
-      <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-12">
-          My Services
-        </h2>
+    <section id="services" className="py-20 lg:py-28 relative cyber-grid">
+      {/* Glow Backdrop */}
+      <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {services.map((service) => (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="flex flex-col items-center text-center mb-16">
+          <div className="inline-flex items-center gap-2 font-mono text-xs text-cyan-400 tracking-widest uppercase mb-3 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/20">
+            <Terminal size={12} />
+            <span>// 04. CORE ENGINEERING SPECIALIZATIONS</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Architectural Capabilities &{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
+              System Engineering
+            </span>
+          </h2>
+          <p className="mt-3 text-slate-400 max-w-2xl text-base sm:text-lg">
+            What I bring to high-impact teams: specialized production experience in Voice AI, scalable microservices, and reliable SaaS platforms.
+          </p>
+        </div>
+
+        {/* Capabilities Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {CAPABILITIES.map((cap) => (
             <div
-              key={service.id}
-              className="bg-gray-900 p-4 sm:p-6 rounded-2xl shadow-lg border border-gray-700
-              hover:border-green-400 hover:shadow-green-500/20 transition-all duration-300 group"
+              key={cap.num}
+              className="rounded-2xl bg-[#0a0e18] border border-white/[0.08] hover:border-cyan-500/40 p-6 sm:p-7 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(6,182,212,0.15)] relative overflow-hidden"
             >
-              {/* Icon */}
-              <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gray-800 mb-4 sm:mb-6 
-                group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-blue-500 transition-all">
-                {service.icon}
+              {/* Subtle Corner Number */}
+              <div className="absolute top-4 right-4 font-mono text-xs font-bold text-slate-600 group-hover:text-cyan-400/80 transition-colors">
+                {cap.num}
               </div>
 
-              {/* Title */}
-              <h3 className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500 mb-2 sm:mb-3">
-                {service.title}
-              </h3>
+              <div>
+                {/* Icon HUD */}
+                <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.08] group-hover:border-cyan-500/40 group-hover:bg-cyan-950/30 flex items-center justify-center mb-5 transition-all">
+                  {cap.icon}
+                </div>
 
-              {/* Description */}
-              <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base leading-relaxed">
-                {expanded === service.id ? service.full : service.short}
-              </p>
+                {/* Tag & Title */}
+                <div className="font-mono text-[10px] text-cyan-400/90 tracking-wider uppercase mb-1.5 font-semibold">
+                  {cap.tag}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
+                  {cap.title}
+                </h3>
 
-              {/* Read More Button */}
-              <button
-                onClick={() => toggleExpand(service.id)}
-                className="inline-block w-full sm:w-auto text-sm sm:text-base px-3 sm:px-4 py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 
-                text-black font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer text-center"
-              >
-                {expanded === service.id ? "Read Less" : "Read More"}
-              </button>
+                {/* Description */}
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
+                  {cap.description}
+                </p>
+              </div>
+
+              {/* Bottom Metrics & Tech */}
+              <div className="pt-4 border-t border-white/[0.06] space-y-3">
+                <div className="flex items-center gap-1.5 text-slate-400 text-[11px] font-mono">
+                  <Zap size={13} className="text-amber-400 flex-shrink-0" />
+                  <span className="text-slate-300 font-medium">{cap.metrics}</span>
+                </div>
+
+                <div className="flex flex-wrap gap-1">
+                  {cap.technologies.map((t, idx) => (
+                    <span
+                      key={idx}
+                      className="font-mono text-[10px] px-2 py-0.5 rounded bg-white/[0.03] text-slate-400 border border-white/[0.06]"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
