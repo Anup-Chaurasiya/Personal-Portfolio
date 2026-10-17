@@ -90,7 +90,7 @@ const Contact = () => {
             </span>
           </h2>
           <p className="mt-3 text-slate-400 max-w-2xl text-base sm:text-lg">
-            Actively interviewing for AI Engineer & Full-Stack SDE-II roles (12+ LPA alignment). Notice period: &lt; 30 days. Let's discuss immediate team contribution.
+            Actively interviewing for AI Engineer & Full-Stack SDE-II roles. Notice period: &lt; 30 days. Let's discuss immediate team contribution.
           </p>
         </div>
 

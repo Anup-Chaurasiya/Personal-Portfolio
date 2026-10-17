@@ -99,7 +99,7 @@ const RecruiterFastTrack = () => {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-xs font-mono text-slate-300">
             <ShieldCheck size={16} className="text-emerald-400" />
-            <span>1.8+ Years Enterprise & Startup Track Record • 100+ Production Users</span>
+            <span>2+ Years Enterprise & Startup Track Record • 100+ Production Users</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
