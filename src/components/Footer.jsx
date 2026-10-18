@@ -1,7 +1,10 @@
 import React from "react";
-import { Terminal, ArrowUp, Activity, ShieldCheck, Heart } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { ArrowUp } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+
+const RESUME_URL =
+  "https://drive.google.com/file/d/1zD-sORJKZXDfBlIiRntyzI7DkFKAzodM/view?usp=sharing";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -9,70 +12,74 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-[#05070c] border-t border-white/[0.08] text-slate-400 py-12 overflow-hidden">
-      {/* Background Accent Grid */}
-      <div className="absolute inset-0 cyber-grid opacity-30 pointer-events-none" />
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        {/* Top Tier */}
+    <footer className="border-t border-white/[0.08] text-slate-400 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/[0.06]">
-          {/* Logo & Operational Status */}
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-              <Terminal size={16} />
+          {/* Brand info */}
+          <div>
+            <div className="text-base font-bold text-white">
+              Anup Chaurasiya
             </div>
-            <div>
-              <div className="font-mono text-sm font-bold text-white tracking-tight">
-                anup<span className="text-cyan-400">.dev</span>
-              </div>
-              <div className="flex items-center gap-1.5 font-mono text-[10px] text-emerald-400">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>SYS_STATUS: OPERATIONAL</span>
-              </div>
-            </div>
+            <p className="text-xs text-slate-400 mt-0.5">
+              AI & Full-Stack Software Engineer
+            </p>
           </div>
 
-          {/* Nav Quicklinks */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-mono">
-            <a href="#home" className="hover:text-cyan-300 transition-colors">Home</a>
-            <span className="text-slate-600">•</span>
-            <a href="#aboutme" className="hover:text-cyan-300 transition-colors">About</a>
-            <span className="text-slate-600">•</span>
-            <a href="#experience" className="hover:text-cyan-300 transition-colors">Experience</a>
-            <span className="text-slate-600">•</span>
-            <a href="#projects" className="hover:text-cyan-300 transition-colors">Projects</a>
-            <span className="text-slate-600">•</span>
-            <a href="#services" className="hover:text-cyan-300 transition-colors">Capabilities</a>
-            <span className="text-slate-600">•</span>
-            <a href="#certificates" className="hover:text-cyan-300 transition-colors">Credentials</a>
-            <span className="text-slate-600">•</span>
-            <a href="#contact" className="hover:text-cyan-300 transition-colors">Contact</a>
-          </div>
+          {/* Quick links */}
+          <nav className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-400">
+            <a href="#experience" className="hover:text-white transition">
+              Experience
+            </a>
+            <span className="text-slate-700">•</span>
+            <a href="#projects" className="hover:text-white transition">
+              Projects
+            </a>
+            <span className="text-slate-700">•</span>
+            <a href="#aboutme" className="hover:text-white transition">
+              About & Skills
+            </a>
+            <span className="text-slate-700">•</span>
+            <a href="#certificates" className="hover:text-white transition">
+              Credentials
+            </a>
+            <span className="text-slate-700">•</span>
+            <a href="#contact" className="hover:text-white transition">
+              Contact
+            </a>
+            <span className="text-slate-700">•</span>
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              Resume
+            </a>
+          </nav>
 
-          {/* Scroll to Top Trigger */}
+          {/* Back to top */}
           <button
             onClick={scrollToTop}
-            className="p-2.5 rounded-xl bg-white/[0.03] hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/40 text-slate-300 hover:text-cyan-300 transition-all cursor-pointer flex items-center gap-2 font-mono text-xs"
-            aria-label="Scroll to top"
+            className="p-2 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 text-slate-300 hover:text-white transition flex items-center gap-1.5 text-xs font-medium cursor-pointer"
+            aria-label="Back to top"
           >
             <span>Top</span>
-            <ArrowUp size={14} />
+            <ArrowUp size={13} />
           </button>
         </div>
 
-        {/* Middle Tier: Summary & Verified Links */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-xs sm:text-sm text-slate-400 text-center md:text-left max-w-lg leading-relaxed">
-            Software Engineer specializing in Production Voice AI, Distributed RAG Systems & Scalable Microservices. Architected with high fidelity and performance in mind.
+        {/* Bottom copyright and socials */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <p>
+            © {new Date().getFullYear()} Anup Chaurasiya. Built with React & TailwindCSS.
           </p>
 
-          {/* Social Icons */}
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-4 text-slate-400">
             <a
               href="https://github.com/Anup-Chaurasiya"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-cyan-500/40 text-slate-400 hover:text-white transition-all"
+              className="hover:text-white transition"
               aria-label="GitHub"
             >
               <FaGithub size={16} />
@@ -81,7 +88,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/anupchaurasiya/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-sky-500/40 text-slate-400 hover:text-sky-400 transition-all"
+              className="hover:text-white transition"
               aria-label="LinkedIn"
             >
               <FaLinkedin size={16} />
@@ -90,7 +97,7 @@ const Footer = () => {
               href="https://leetcode.com/u/2021cs132/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-amber-500/40 text-slate-400 hover:text-amber-400 transition-all"
+              className="hover:text-white transition"
               aria-label="LeetCode"
             >
               <SiLeetcode size={16} />
@@ -99,21 +106,20 @@ const Footer = () => {
               href="https://x.com/anupchaurasia73"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-[#0a0e18] hover:bg-[#12192c] border border-white/10 hover:border-cyan-500/40 text-slate-400 hover:text-cyan-400 transition-all"
-              aria-label="Twitter"
+              className="hover:text-white transition"
+              aria-label="Twitter / X"
             >
               <FaTwitter size={16} />
             </a>
-          </div>
-        </div>
-
-        {/* Bottom Tier: Copyright & Meta */}
-        <div className="pt-6 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-[11px] text-slate-500">
-          <div>
-            &copy; {new Date().getFullYear()} Anup Chaurasiya. All rights reserved.
-          </div>
-          <div className="flex items-center gap-1.5">
-            <span>Built with React 19 • TailwindCSS v4 • Framer Motion</span>
+            <a
+              href="https://wa.me/916386009873"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-emerald-400 transition"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp size={16} />
+            </a>
           </div>
         </div>
       </div>
