@@ -23,7 +23,7 @@ const EXPERIENCES = [
     statusBadge: "PRODUCTION ACTIVE",
     statusColor: "emerald",
     metrics: [
-      { label: "Pipeline Latency", val: "-70%", icon: <Timer size={13} className="text-emerald-400" /> },
+      { label: "Pipeline Latency", val: "-30%", icon: <Timer size={13} className="text-emerald-400" /> },
       { label: "Candidate No-Shows", val: "-40%", icon: <Users size={13} className="text-cyan-400" /> },
       { label: "Recruiter Effort", val: "-75%", icon: <CheckCircle2 size={13} className="text-purple-400" /> },
       { label: "Merged PRs", val: "64+", icon: <GitPullRequest size={13} className="text-sky-400" /> },

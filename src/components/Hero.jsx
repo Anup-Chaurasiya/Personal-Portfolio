@@ -18,7 +18,7 @@ const RESUME_URL =
 
 const HIGHLIGHTS = [
   { value: "2+", label: "Years Experience", sub: "Production software" },
-  { value: "-70%", label: "Voice Latency Cut", sub: "LiveKit & WebRTC" },
+  { value: "-30%", label: "Voice Latency Cut", sub: "LiveKit & WebRTC" },
   { value: "100+", label: "Active Users", sub: "Twerz SaaS platform" },
   { value: "300+", label: "Problems Solved", sub: "LeetCode & Algorithms" },
 ];
@@ -208,7 +208,7 @@ const Hero = () => {
                     <span className="text-[10px] text-slate-400">Krut AI</span>
                   </div>
                   <p className="text-slate-400 leading-relaxed">
-                    LiveKit & WebRTC audio streaming, VAD turn-taking, and OpenAI Realtime API cutting latency by 70%.
+                    LiveKit & WebRTC audio streaming, VAD turn-taking, and OpenAI Realtime API cutting latency by 30%.
                   </p>
                 </div>
 
