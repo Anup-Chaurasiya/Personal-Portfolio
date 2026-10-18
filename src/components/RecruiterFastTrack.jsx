@@ -24,7 +24,7 @@ const PILLARS = [
     title: "2. Scalable Microservices & Distributed Queues",
     highlight: "FastAPI • Django • Redis • Celery • PostgreSQL",
     detail:
-      "Designed asynchronous worker pipelines handling 100+ concurrent resume-parsing and evaluation jobs across 64+ merged production pull requests.",
+      "Designed asynchronous worker pipelines handling 100+ concurrent resume-parsing and evaluation jobs across 80+ merged production pull requests.",
   },
   {
     title: "3. Full-Stack SaaS Product Ownership",
