@@ -240,7 +240,7 @@ const Hero = () => {
                   <div className="text-[11px] text-slate-400">Production Experience</div>
                 </div>
                 <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.06]">
-                  <div className="text-xl font-bold text-white">64+ PRs</div>
+                  <div className="text-xl font-bold text-white">100+ PRs</div>
                   <div className="text-[11px] text-slate-400">Merged to Production</div>
                 </div>
               </div>
