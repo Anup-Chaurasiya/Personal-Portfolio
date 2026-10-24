@@ -11,7 +11,7 @@ const NAV_ITEMS = [
 ];
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1zD-sORJKZXDfBlIiRntyzI7DkFKAzodM/view?usp=sharing";
+  "https://drive.google.com/file/d/19zkQy2u26p2xDi_nC7u62HYupkeAZduG/view?usp=sharing";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
