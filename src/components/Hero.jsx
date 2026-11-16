@@ -14,7 +14,7 @@ import toast from "react-hot-toast";
 import AnupPhoto from "../assets/anup.jpg";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/19zkQy2u26p2xDi_nC7u62HYupkeAZduG/view?usp=sharing";
+  "https://drive.google.com/file/d/18hnkSguF3y7ecSV-WAn_YjpfCJeQZzve/view?usp=sharing";
 
 const HIGHLIGHTS = [
   { value: "2+", label: "Years Experience", sub: "Production software" },
