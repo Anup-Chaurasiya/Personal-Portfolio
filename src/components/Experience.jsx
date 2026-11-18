@@ -4,10 +4,8 @@ import {
   Calendar,
   ChevronRight,
   Terminal,
-  Activity,
   Layers,
   Sparkles,
-  GitPullRequest,
   Users,
   Timer,
   CheckCircle2,
@@ -17,16 +15,16 @@ const EXPERIENCES = [
   {
     id: "krut-ai",
     company: "Krut AI",
-    role: "Software Engineer — AI & Voice Systems",
+    role: "Software Engineer",
     product: "SkillMoksha — Real-time AI Voice Interviewer & Hiring Engine",
-    duration: "June 2025 – Present",
-    statusBadge: "PRODUCTION ACTIVE",
-    statusColor: "emerald",
+    duration: "Jun 2025 – Nov 2026",
+    statusBadge: "COMPLETED",
+    statusColor: "cyan",
     metrics: [
       { label: "Pipeline Latency", val: "-30%", icon: <Timer size={13} className="text-emerald-400" /> },
       { label: "Candidate No-Shows", val: "-40%", icon: <Users size={13} className="text-cyan-400" /> },
       { label: "Recruiter Effort", val: "-75%", icon: <CheckCircle2 size={13} className="text-purple-400" /> },
-      { label: "Merged PRs", val: "100+", icon: <GitPullRequest size={13} className="text-sky-400" /> },
+      { label: "Concurrent AI Jobs", val: "100+", icon: <Layers size={13} className="text-sky-400" /> },
     ],
     technologies: [
       "Python",
@@ -55,7 +53,7 @@ const EXPERIENCES = [
       },
       {
         title: "Telephony & WebSocket Infrastructure",
-        desc: "Delivered a fault-tolerant voice/telephony backend using async WebSockets, Plivo audio streaming, and Redis concurrency control, cutting pipeline latency by 70% and no-shows by 40%.",
+        desc: "Delivered a fault-tolerant voice/telephony backend using async WebSockets, Plivo audio streaming, and Redis concurrency control, cutting pipeline latency by 30% and no-shows by 40%.",
       },
       {
         title: "Automated Evaluation & Proctoring",
@@ -63,55 +61,7 @@ const EXPERIENCES = [
       },
       {
         title: "High-Concurrency Async Workers",
-        desc: "Shipped async Celery & Redis pipelines handling 100+ concurrent background jobs for resume parsing, AI scoring, and timed reminders across 64+ merged pull requests.",
-      },
-    ],
-  },
-  {
-    id: "twerz",
-    company: "Twerz",
-    role: "Founding Engineer — Full-Stack AI Platform",
-    product: "AI Career SaaS Platform (Serving 100+ Active Job Seekers)",
-    duration: "Jun 2026 – Present",
-    statusBadge: "PRODUCTION SAAS",
-    statusColor: "cyan",
-    metrics: [
-      { label: "Active Users", val: "100+", icon: <Users size={13} className="text-cyan-400" /> },
-      { label: "Automated Tests", val: "150+", icon: <CheckCircle2 size={13} className="text-emerald-400" /> },
-      { label: "ATS Pipeline", val: "Real-time", icon: <Activity size={13} className="text-purple-400" /> },
-      { label: "Payments", val: "Razorpay Live", icon: <Sparkles size={13} className="text-amber-400" /> },
-    ],
-    technologies: [
-      "Next.js",
-      "FastAPI",
-      "PostgreSQL",
-      "LangChain",
-      "LiteLLM",
-      "Docker",
-      "Google OAuth",
-      "Razorpay",
-      "TailwindCSS",
-    ],
-    highlights: [
-      {
-        title: "Evidence-Grounded ATS Pipeline",
-        desc: "Founded and engineered a production AI career SaaS used by 100+ job seekers to analyze job descriptions, tailor resumes, score ATS fit, and track job applications.",
-      },
-      {
-        title: "Anti-Hallucination LLM Guardrails",
-        desc: "Engineered an evidence-grounded LLM pipeline for resume tailoring and ATS scoring with structured-output validation to prevent fabricated skills or experience.",
-      },
-      {
-        title: "Scalable Microservice Backend",
-        desc: "Designed scalable backend services with FastAPI, PostgreSQL, background workers, secure Google OAuth/JWT authentication, Razorpay payment processing, and system monitoring.",
-      },
-      {
-        title: "Next.js Web App & Chrome Extension",
-        desc: "Built a Next.js web application and Chrome extension automating job capture, role-specific application generation, outreach messages, and application pipeline tracking.",
-      },
-      {
-        title: "Automated Test Suite",
-        desc: "Authored 150+ automated unit and integration tests covering AI workflows, document rendering, and billing APIs to guarantee 99.9% platform reliability.",
+        desc: "Shipped async Celery & Redis pipelines handling 100+ concurrent AI jobs.",
       },
     ],
   },
@@ -120,45 +70,28 @@ const EXPERIENCES = [
     company: "Upsellity AI",
     role: "Software Engineer Intern",
     product: "E-Commerce Growth & Automated Discount Engine",
-    duration: "Jan 2025 – June 2025",
+    duration: "Jan 2025 – Jun 2025",
     statusBadge: "COMPLETED",
     statusColor: "purple",
     metrics: [
-      { label: "API Target", val: "<100ms", icon: <Timer size={13} className="text-cyan-400" /> },
-      { label: "Sync Engine", val: "GraphQL", icon: <Layers size={13} className="text-emerald-400" /> },
-      { label: "UI System", val: "Shopify Polaris", icon: <Sparkles size={13} className="text-purple-400" /> },
-      { label: "A/B Testing", val: "Automated", icon: <CheckCircle2 size={13} className="text-sky-400" /> },
+      { label: "Backend Services", val: "Node.js", icon: <Layers size={13} className="text-cyan-400" /> },
+      { label: "Real-Time Sync", val: "GraphQL", icon: <Layers size={13} className="text-emerald-400" /> },
+      { label: "Merchant Dashboard", val: "React", icon: <Sparkles size={13} className="text-purple-400" /> },
+      { label: "Campaign Tools", val: "A/B Testing", icon: <CheckCircle2 size={13} className="text-sky-400" /> },
     ],
-    technologies: [
-      "Node.js",
-      "GraphQL",
-      "React",
-      "TypeScript",
-      "Remix",
-      "Shopify Polaris",
-      "LLM Recommendations",
-      "REST APIs",
-    ],
+    technologies: ["Node.js", "GraphQL", "React", "TypeScript", "Remix", "LLM", "PostgreSQL"],
     highlights: [
       {
         title: "Configurable Promotion & Discount Engine",
         desc: "Built Node.js backend services for an upsell/cross-sell application, including a configurable discount engine supporting product-level, cart-level, and conditional promotion rules.",
       },
       {
-        title: "High-Speed GraphQL Synchronization",
-        desc: "Integrated GraphQL APIs to sync product, discount, and order data in real time between backend services and merchant storefronts with sub-100ms response targets.",
+        title: "Real-Time GraphQL Synchronization",
+        desc: "Integrated GraphQL APIs to sync product, discount, and order data in real time between backend services and merchant storefronts.",
       },
       {
         title: "Merchant Analytics Dashboard",
         desc: "Built the merchant dashboard using React, TypeScript, and Remix enabling merchants to launch marketing campaigns, run A/B tests, and track results without developer help.",
-      },
-      {
-        title: "Shopify Polaris UI Admin Embedding",
-        desc: "Developed Shopify Polaris-based UI components for the merchant-facing app embedding, ensuring UX consistency with the Shopify Admin design system.",
-      },
-      {
-        title: "LLM Bundle Recommendation Engine",
-        desc: "Integrated an LLM-powered product recommendation engine to auto-suggest contextually relevant upsell bundles based on cart contents, customer history, and purchase intent signals.",
       },
     ],
   },
@@ -188,7 +121,7 @@ const Experience = () => {
             </span>
           </h2>
           <p className="mt-3 text-slate-400 max-w-2xl text-base sm:text-lg">
-            Direct impact, engineering decisions, and measurable outcomes delivered across venture-backed AI platforms and high-growth products.
+            Engineering contributions and measurable outcomes from my work at Krut AI and internship at Upsellity AI.
           </p>
         </div>
 

@@ -1,42 +1,33 @@
+import { RESUME_URL } from "../constants/resume";
 import React from "react";
 import {
   FileText,
-  Phone,
   Mail,
-  Zap,
   CheckCircle2,
-  Clock,
-  Compass,
-  ArrowRight,
   ShieldCheck,
-  TrendingUp,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const PILLARS = [
   {
-    title: "1. Real-Time Voice AI (Rare Skillset)",
+    title: "1. Real-Time Voice AI",
     highlight: "LiveKit • WebRTC • OpenAI Realtime • VAD",
-    detail:
-      "Engineered full duplex voice interviewer at Krut AI with low-latency turn-taking, interruption handling, and audio buffer flushing. Cut pipeline latency by 30%.",
+    detail: "Built a real-time voice interviewer at Krut AI with conversational turn-taking and interruption handling. Cut pipeline latency by 30%.",
   },
   {
-    title: "2. Scalable Microservices & Distributed Queues",
-    highlight: "FastAPI • Django • Redis • Celery • PostgreSQL",
-    detail:
-      "Designed asynchronous worker pipelines handling 100+ concurrent resume-parsing and evaluation jobs across 80+ merged production pull requests.",
+    title: "2. Backend & Async Pipelines",
+    highlight: "Django • Redis • Celery • PostgreSQL",
+    detail: "Delivered a fault-tolerant telephony backend and asynchronous Celery/Redis pipelines handling 100+ concurrent AI jobs.",
   },
   {
-    title: "3. Full-Stack SaaS Product Ownership",
-    highlight: "Next.js • React 19 • TypeScript • Razorpay",
-    detail:
-      "Founded Twerz (production AI career platform serving 100+ active users) with anti-hallucination ATS scoring, OAuth, automated billing, and Chrome extension.",
+    title: "3. Independent AI Product Development",
+    highlight: "FastAPI • Next.js • LiteLLM (Gemini) • Razorpay",
+    detail: "Independently built Twerz, a personal AI career application used by 10+ people, with evidence-grounded resume tailoring, ATS scoring, and a Chrome extension.",
   },
   {
-    title: "4. Algorithmic Rigor & Software QA",
-    highlight: "300+ DSA Problems • 150+ Automated Tests",
-    detail:
-      "Proven data structures and algorithmic foundation on LeetCode with 150+ automated unit and integration tests guaranteeing 99.9% deployment reliability.",
+    title: "4. Data Structures & Algorithms",
+    highlight: "300+ DSA Problems",
+    detail: "Solved 300+ data structures and algorithms problems across LeetCode, GeeksforGeeks, and Code360.",
   },
 ];
 
@@ -55,15 +46,15 @@ const RecruiterFastTrack = () => {
               Why I Am Ready to Deliver Immediate ROI on Day 1
             </h2>
             <p className="text-slate-400 text-xs sm:text-sm">
-              Targeting: <strong className="text-cyan-300">AI Engineer</strong> / <strong className="text-cyan-300">Full-Stack SDE-II</strong> Roles
+              Targeting: <strong className="text-cyan-300">AI Engineer</strong> / <strong className="text-cyan-300">Full-Stack Engineer</strong> Roles
             </p>
           </div>
 
           {/* Quick Snapshot Matrix */}
           <div className="grid grid-cols-2 gap-3 text-xs font-mono self-start md:self-auto">
             <div className="p-2.5 rounded-lg bg-white/[0.03] border border-white/[0.06]">
-              <span className="text-slate-400 block text-[10px]">NOTICE PERIOD:</span>
-              <span className="text-emerald-400 font-bold">&lt; 30 Days (Immediate)</span>
+              <span className="text-slate-400 block text-[10px]">BACKGROUND:</span>
+              <span className="text-emerald-400 font-bold">AI & Full-Stack Engineering</span>
             </div>
             <div className="p-2.5 rounded-lg bg-white/[0.03] border border-white/[0.06]">
               <span className="text-slate-400 block text-[10px]">LOCATIONS:</span>
@@ -99,12 +90,12 @@ const RecruiterFastTrack = () => {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-xs font-mono text-slate-300">
             <ShieldCheck size={16} className="text-emerald-400" />
-            <span>2+ Years Enterprise & Startup Track Record • 100+ Production Users</span>
+            <span>Nearly 2 years of experience • Twerz used by 10+ people</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
             <a
-              href="https://drive.google.com/file/d/1zD-sORJKZXDfBlIiRntyzI7DkFKAzodM/view?usp=sharing"
+              href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-[0_0_20px_rgba(6,182,212,0.35)] flex items-center justify-center gap-2"

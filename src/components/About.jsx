@@ -121,21 +121,21 @@ const About = () => {
                 Engineering Approach
               </h3>
               <p>
-                I have 2+ years of production experience building software that
+                I have nearly 2 years of production experience building software that
                 demands real-time responsiveness, strict schema compliance, and
                 high concurrency.
               </p>
               <p className="text-slate-400">
                 At Krut AI, I engineered conversational turn-taking, audio
                 streaming buffers, and interruption detection for our live voice
-                interviewer. At Twerz, I architected our full-stack platform
-                from scratch, serving active job seekers with anti-hallucination
-                ATS scoring and subscription billing.
+                interviewer. I independently built Twerz as a personal project,
+                an AI career application used by 10+ people for resume tailoring,
+                evidence-grounded ATS scoring, and job-application tracking.
               </p>
               <p className="text-slate-400">
                 I prioritize simple, maintainable architecture over unnecessary
-                complexity, backed by comprehensive automated test suites and
-                thoughtful monitoring.
+                complexity, with structured-output validation and
+                production monitoring.
               </p>
             </div>
           </div>

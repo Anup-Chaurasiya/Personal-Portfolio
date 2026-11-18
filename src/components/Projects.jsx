@@ -36,7 +36,7 @@ const PROJECTS = [
     github: "https://github.com/Anup-Chaurasiya/SkillMoksha",
     live: "https://app.skillmoksha.ai",
     description:
-      "Real-time voice interviewer platform with LiveKit WebRTC audio streaming, VAD silence turn-taking, interruption handling, and proctoring. Cut speech turnaround latency by 70% and reduced recruiter screening time by 75%.",
+      "Built at Krut AI: a real-time voice interviewer platform with LiveKit WebRTC audio streaming, VAD silence turn-taking, interruption handling, and proctoring. Cut pipeline latency by 30%, reduced candidate no-shows by 40%, and reduced manual recruiter effort by 75%.",
   },
   {
     id: "twerz",
@@ -47,22 +47,21 @@ const PROJECTS = [
       "FastAPI",
       "Next.js",
       "PostgreSQL",
-      "LangChain",
+      "LiteLLM (Gemini)",
       "Docker",
       "Razorpay",
-      "TailwindCSS",
     ],
     image: resumeImage,
     live: "https://twerz.com",
     github: "https://github.com/Anup-Chaurasiya/Personal-Portfolio",
     description:
-      "Production SaaS platform serving 100+ active job seekers. Features FastAPI microservices, structured anti-hallucination ATS scoring, a Next.js web application, Chrome extension, and automated Razorpay billing.",
+      "Personal AI career application used by 10+ people to tailor resumes, score ATS fit, and track job applications. Features evidence-grounded LLM output validation, cover-letter generation, a Chrome extension, and platform admin infrastructure.",
   },
   {
     id: "resolveai",
     category: ["featured", "ai"],
     name: "ResolveAI — AI Support Operations Platform",
-    tagline: "Autonomous Support Ops with Stateful Vector Retrieval",
+    tagline: "Stateful Support Assistant & Citation-Backed RAG",
     technologies: [
       "FastAPI",
       "LangGraph",
@@ -75,27 +74,27 @@ const PROJECTS = [
     github: "https://github.com/Anup-Chaurasiya/Resolve-AI---AI-Support-Operations-Platform-",
     live: "https://resolveai.twerz.com/",
     description:
-      "Enterprise support operations architecture powered by FastAPI microservices, LangGraph multi-agent routing, and high-dimensional semantic vector search via Qdrant for automated contextual resolution.",
+      "Personal AI support operations platform built with FastAPI and LangGraph. Uses a Qdrant RAG pipeline with ingestion, chunking, FastEmbed embeddings, hybrid search/reranking, and measured retrieval quality for grounded, citation-backed responses. Includes SSE streaming, thread-level memory, concurrency control, API-key authentication, rate limiting, OpenTelemetry tracing, Docker, and CI.",
   },
   {
     id: "upsellity",
     category: ["featured", "fullstack"],
     name: "Upsellity AI — E-Commerce Growth Engine",
-    tagline: "Sub-100ms Promotion Engine & Shopify Polaris Embedded UI",
+    tagline: "Configurable Discount Engine & Merchant Dashboard",
     technologies: [
       "Node.js",
       "GraphQL",
       "React",
       "TypeScript",
       "Remix",
-      "Shopify Polaris",
-      "LLMs",
+      "LLM",
+      "PostgreSQL",
     ],
     image: shopify,
     github: "https://github.com/Anup-Chaurasiya/Upsellity",
     live: "https://upsellity.com/",
     description:
-      "E-commerce growth platform featuring a configurable discount engine supporting product-level and cart-level rules, real-time GraphQL merchant storefront sync, and LLM-driven bundle recommendations.",
+      "Built during my Software Engineer internship at Upsellity AI: Node.js services for product-level, cart-level, and conditional discount rules, real-time GraphQL data synchronization, and a React, TypeScript, and Remix dashboard for campaigns, A/B tests, and results tracking.",
   },
   {
     id: "code-reviewer",

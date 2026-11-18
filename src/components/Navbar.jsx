@@ -1,3 +1,4 @@
+import { RESUME_URL } from "../constants/resume";
 import React, { useState, useEffect } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import AnupPhoto from "../assets/anup.jpg";
@@ -10,8 +11,6 @@ const NAV_ITEMS = [
   { name: "Contact", href: "#contact" },
 ];
 
-const RESUME_URL =
-  "https://drive.google.com/file/d/19zkQy2u26p2xDi_nC7u62HYupkeAZduG/view?usp=sharing";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

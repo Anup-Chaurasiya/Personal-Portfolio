@@ -1,3 +1,4 @@
+import { RESUME_URL } from "../constants/resume";
 import React, { useState } from "react";
 import {
   FileText,
@@ -13,14 +14,12 @@ import { SiLeetcode } from "react-icons/si";
 import toast from "react-hot-toast";
 import AnupPhoto from "../assets/anup.jpg";
 
-const RESUME_URL =
-  "https://drive.google.com/file/d/18hnkSguF3y7ecSV-WAn_YjpfCJeQZzve/view?usp=sharing";
 
 const HIGHLIGHTS = [
-  { value: "2+", label: "Years Experience", sub: "Production software" },
+  { value: "Nearly 2", label: "Years Experience", sub: "Production software" },
   { value: "-30%", label: "Voice Latency Cut", sub: "LiveKit & WebRTC" },
-  { value: "100+", label: "Active Users", sub: "Twerz SaaS platform" },
-  { value: "300+", label: "Problems Solved", sub: "LeetCode & Algorithms" },
+  { value: "10+", label: "People Using Twerz", sub: "Twerz SaaS platform" },
+  { value: "300+", label: "Problems Solved", sub: "LeetCode, GFG & Code360" },
 ];
 
 const Hero = () => {
@@ -59,9 +58,9 @@ const Hero = () => {
             {/* Concise Bio */}
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mb-8">
               I build production real-time voice AI systems, multi-agent RAG platforms,
-              and scalable full-stack web applications. Currently engineering voice
+              and scalable full-stack web applications. I built voice
               pipelines at <span className="text-white font-medium">Krut AI</span> and
-              founding <span className="text-white font-medium">Twerz</span>.
+              independently built <span className="text-white font-medium">Twerz</span> as a personal project.
             </p>
 
             {/* Core Tech Stack Pills */}
@@ -199,7 +198,7 @@ const Hero = () => {
               {/* Current Focus Areas */}
               <div className="space-y-3.5 text-xs">
                 <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
-                  Current Focus & Production Work
+                  Work & Personal Projects
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-1">
@@ -218,7 +217,7 @@ const Hero = () => {
                     <span className="text-[10px] text-slate-400">Twerz</span>
                   </div>
                   <p className="text-slate-400 leading-relaxed">
-                    AI career platform serving 100+ active job seekers. FastAPI microservices, Next.js, and Razorpay billing.
+                    Personal AI career project used by 10+ people. Built with FastAPI, Next.js, PostgreSQL, LiteLLM (Gemini), Docker, and Razorpay.
                   </p>
                 </div>
 
@@ -228,7 +227,7 @@ const Hero = () => {
                     <span className="text-[10px] text-slate-400">ResolveAI</span>
                   </div>
                   <p className="text-slate-400 leading-relaxed">
-                    Autonomous support ops with LangGraph orchestration and high-dimensional Qdrant vector retrieval.
+                    Stateful support assistant with LangGraph orchestration and RAG over enterprise knowledge using Qdrant.
                   </p>
                 </div>
               </div>
@@ -236,12 +235,12 @@ const Hero = () => {
               {/* Fast Stats Row */}
               <div className="grid grid-cols-2 gap-3 pt-2">
                 <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.06]">
-                  <div className="text-xl font-bold text-white">2+ Years</div>
+                  <div className="text-xl font-bold text-white">Nearly 2 Years</div>
                   <div className="text-[11px] text-slate-400">Production Experience</div>
                 </div>
                 <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.06]">
-                  <div className="text-xl font-bold text-white">100+ PRs</div>
-                  <div className="text-[11px] text-slate-400">Merged to Production</div>
+                  <div className="text-xl font-bold text-white">300+ Problems</div>
+                  <div className="text-[11px] text-slate-400">DSA Problems Solved</div>
                 </div>
               </div>
             </div>
